@@ -18,7 +18,7 @@ class CreateMembersTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('course');
-            $table->string('qoutes');
+            $table->text('qoutes');
             $table->timestamps();
         });
     }

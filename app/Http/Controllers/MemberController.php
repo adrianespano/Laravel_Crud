@@ -20,9 +20,10 @@ class MemberController extends Controller
     public function save(Request $request){
     	$member = new Member;
     	$member->firstname = $request->input('firstname');
-    	$member->lastname = $request->input('lastname');
+        $member->lastname = $request->input('lastname');
+        $member->course = $request->input('course');
+        $member->qoutes = $request->input('qoutes');
   		$member->save();
- 
   		return redirect('/');
     }
  
